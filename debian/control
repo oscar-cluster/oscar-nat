@@ -7,6 +7,6 @@ Standards-Version: 1.0
 
 Package: oscar-nat
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, liboscar-server (> 6.2.1), packman
+Depends: ${shlibs:Depends}, ${misc:Depends}, liboscar-server (>= 6.1.3), packman
 Description: OSCAR nat table manager
  Set of scripts and Perl modules for the management of the OSCAR nat tables.
