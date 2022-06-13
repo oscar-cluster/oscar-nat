@@ -1,7 +1,7 @@
 Summary:        OSCAR nat table service.
 Name:           oscar-nat
 Version:        1.0
-Release:        1
+Release:        2
 Vendor:         Open Cluster Group <http://OSCAR.OpenClusterGroup.org/>
 Distribution:   OSCAR
 Packager:       Olivier Lahaye <olivier.lahaye@cea.fr>
@@ -11,7 +11,7 @@ Source:         %{name}-%{version}.tar.gz
 BuildRoot:      %{_localstatedir}/tmp/%{name}-root
 BuildArch:      noarch
 #AutoReqProv: 	no
-Requires:       oscar-base-lib > 6.0.2
+Requires:       liboscar-server >= 6.3
 Requires:       packman
 
 %description
@@ -30,5 +30,7 @@ Set of scripts and Perl modules for the management of OSCAR nat tables.
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Mon Jun 13 2022 Olivier Lahaye <olivier.lahaye@cea.fr> 1.0-2
+- adapt deps to new oscar package
 * Thu Apr 04 2013 Olivier Lahaye <olivier.lahaye@cea.fr> 1.0-1
 - Initial packaging.
